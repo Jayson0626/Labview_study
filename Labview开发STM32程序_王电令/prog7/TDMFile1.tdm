@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?><usi:tdm version="1.0" xmlns:usi="http://www.ni.com/Schemas/USI/1_0">
+
+  <usi:documentation>
+    <usi:exporter>National Instruments USI</usi:exporter>
+    <usi:exporterVersion>1.8</usi:exporterVersion>
+  </usi:documentation>
+
+  <usi:model modelName="National Instruments USI generated meta file" modelVersion="1.0">
+    <usi:include nsUri="http://www.ni.com/DataModels/USI/TDM/1_0"/>
+  </usi:model>
+
+  <usi:include>
+    <file byteOrder="littleEndian" url="TDMFile1.tdx">
+      <block byteOffset="0" id="inc0" length="1000" valueType="eFloat64Usi"/>
+    <block byteOffset="8000" id="inc1" length="1000" valueType="eFloat64Usi"/><block byteOffset="16000" id="inc2" length="1000" valueType="eFloat64Usi"/></file>
+  </usi:include>
+
+  <usi:data>
+    <double_sequence id="usi1">
+      <values external="inc0"/>
+    </double_sequence>
+    <tdm_root id="usi2">
+      <name>未命名</name>
+      <instance_attributes>
+        <time_attribute name="wf_create_time">2007-11-17T15:16:22.859375</time_attribute>
+      </instance_attributes>
+      
+    <channelgroups>#xpointer(id("usi3") id("usi8") id("usi13"))</channelgroups></tdm_root>
+    <tdm_channelgroup id="usi3">
+      <name>未命名</name>
+      <root>#xpointer(id("usi2"))</root>
+      <channels>#xpointer(id("usi4"))</channels>
+      <submatrices>#xpointer(id("usi5"))</submatrices>
+    </tdm_channelgroup>
+    <tdm_channel id="usi4">
+      <name>温度</name>
+      <group>#xpointer(id("usi3"))</group>
+      <unit_string/>
+      <datatype>DT_DOUBLE</datatype>
+      <minimum>-1.0997685880421</minimum>
+      <maximum>1.098752873548</maximum>
+      <instance_attributes>
+        <double_attribute name="wf_increment">0.001</double_attribute>
+        <long_attribute name="wf_samples">1000</long_attribute>
+        <double_attribute name="wf_start_offset">0</double_attribute>
+        <time_attribute name="wf_start_time">2007-11-17T15:16:22.859375</time_attribute>
+        <string_attribute name="wf_time_pref">
+          <s>relative</s>
+        </string_attribute>
+        <string_attribute name="wf_xname">
+          <s>Time</s>
+        </string_attribute>
+        <string_attribute name="wf_xunit_string">
+          <s>s</s>
+        </string_attribute>
+      </instance_attributes>
+      <local_columns>#xpointer(id("usi6"))</local_columns>
+    </tdm_channel>
+    <submatrix id="usi5">
+      <name>未命名</name>
+      <measurement>#xpointer(id("usi3"))</measurement>
+      <number_of_rows>1000</number_of_rows>
+      <local_columns>#xpointer(id("usi6"))</local_columns>
+    </submatrix>
+    <localcolumn id="usi6">
+      <name>未命名</name>
+      <measurement_quantity>#xpointer(id("usi4"))</measurement_quantity>
+      <submatrix>#xpointer(id("usi5"))</submatrix>
+      <global_flag>15</global_flag>
+      <independent>0</independent>
+      <sequence_representation>explicit</sequence_representation>
+      <values>#xpointer(id("usi1"))</values>
+    </localcolumn>
+  <double_sequence id="usi7"><values external="inc1"/></double_sequence><tdm_channelgroup id="usi8"><name>未命名</name><root>#xpointer(id("usi2"))</root><channels>#xpointer(id("usi9"))</channels><submatrices>#xpointer(id("usi10"))</submatrices></tdm_channelgroup><tdm_channel id="usi9"><name>温度</name><group>#xpointer(id("usi8"))</group><unit_string/><datatype>DT_DOUBLE</datatype><minimum>-1.09988574964507</minimum><maximum>1.09979901622562</maximum><instance_attributes><double_attribute name="wf_increment">0.001</double_attribute><long_attribute name="wf_samples">1000</long_attribute><double_attribute name="wf_start_offset">0</double_attribute><time_attribute name="wf_start_time">2011-09-02T16:00:34.359375</time_attribute><string_attribute name="wf_time_pref"><s>relative</s></string_attribute><string_attribute name="wf_xname"><s>Time</s></string_attribute><string_attribute name="wf_xunit_string"><s>s</s></string_attribute></instance_attributes><local_columns>#xpointer(id("usi11"))</local_columns></tdm_channel><submatrix id="usi10"><name>未命名</name><measurement>#xpointer(id("usi8"))</measurement><number_of_rows>1000</number_of_rows><local_columns>#xpointer(id("usi11"))</local_columns></submatrix><localcolumn id="usi11"><name>未命名</name><measurement_quantity>#xpointer(id("usi9"))</measurement_quantity><submatrix>#xpointer(id("usi10"))</submatrix><global_flag>15</global_flag><independent>0</independent><sequence_representation>explicit</sequence_representation><values>#xpointer(id("usi7"))</values></localcolumn><double_sequence id="usi12"><values external="inc2"/></double_sequence><tdm_channelgroup id="usi13"><name>未命名</name><root>#xpointer(id("usi2"))</root><channels>#xpointer(id("usi14"))</channels><submatrices>#xpointer(id("usi15"))</submatrices></tdm_channelgroup><tdm_channel id="usi14"><name>温度</name><group>#xpointer(id("usi13"))</group><unit_string></unit_string><datatype>DT_DOUBLE</datatype><minimum>-1.0995512469291</minimum><maximum>1.09931315727586</maximum><instance_attributes><double_attribute name="wf_increment">0.001</double_attribute><long_attribute name="wf_samples">1000</long_attribute><double_attribute name="wf_start_offset">0</double_attribute><time_attribute name="wf_start_time">2011-09-15T20:50:20.625</time_attribute><string_attribute name="wf_time_pref"><s>relative</s></string_attribute><string_attribute name="wf_xname"><s>Time</s></string_attribute><string_attribute name="wf_xunit_string"><s>s</s></string_attribute></instance_attributes><local_columns>#xpointer(id("usi16"))</local_columns></tdm_channel><submatrix id="usi15"><name>未命名</name><measurement>#xpointer(id("usi13"))</measurement><number_of_rows>1000</number_of_rows><local_columns>#xpointer(id("usi16"))</local_columns></submatrix><localcolumn id="usi16"><name>未命名</name><measurement_quantity>#xpointer(id("usi14"))</measurement_quantity><submatrix>#xpointer(id("usi15"))</submatrix><global_flag>15</global_flag><independent>0</independent><sequence_representation>explicit</sequence_representation><values>#xpointer(id("usi12"))</values></localcolumn></usi:data>
+
+</usi:tdm>
